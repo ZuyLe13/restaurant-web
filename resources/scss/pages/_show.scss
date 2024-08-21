@@ -1,0 +1,86 @@
+@use "../base";
+
+/* -------------- Product detail -------------- */
+.product {
+    margin-top: 70px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        width: 570px;
+        height: 616px;
+        object-fit: cover;
+    }
+
+    &__content {
+        min-width: 570px;
+    }
+
+    &__rate {
+        display: flex;
+        gap: 8px;
+        margin-top: 8px;
+    }
+
+    &__price,
+    &__desc {
+        margin-top: 20px;
+    }
+
+    &__row {
+        display: flex;
+        gap: 12px;
+        margin-top: 52px;
+    }
+
+    &__number-wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &__number-active,
+    &__number-input {
+        background: var(--Dark);
+        color: var(--White-80);
+    }
+
+    &__number-active {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 42px;
+        height: 42px;
+        border: 1px solid var(--White-80);
+    }
+
+    &__number-input {
+        width: 52px;
+        height: 42px;
+        text-align: center;
+        border-top: 1px solid var(--White-80);
+        border-bottom: 1px solid var(--White-80);
+    }
+
+    &__btn {
+        width: 169px;
+        border-radius: 0;
+    }
+
+    &__info {
+        margin-top: 40px;
+    }
+
+    &__tag {
+        margin-top: 12px;
+    }
+
+    &__info-decor {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 155.556%;
+    }
+}

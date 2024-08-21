@@ -1,0 +1,81 @@
+@use "../base";
+
+/* -------------- About -------------- */
+.about {
+    margin-top: 110px;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 130px;
+        row-gap: 150px;
+    }
+
+    &__content {
+        min-width: 570px;
+
+        &:last-child {
+            margin-left: -100px;
+        }
+    }
+
+    &__desc {
+        margin-top: 10px;
+    }
+
+    &__img {
+        width: 470px;
+        height: 362px;
+        object-fit: cover;
+    }
+}
+
+/* -------------- Vision -------------- */
+.vision {
+    margin-top: 150px;
+
+    &__heading {
+        text-align: center;
+    }
+
+    &__desc {
+        max-width: 768px;
+        margin: 16px auto 0 auto;
+        text-align: center;
+    }
+
+    &__inner {
+        @extend %flexCenter;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    &-item {
+        @extend %flexCenter;
+        gap: 34px;
+
+        margin-top: 50px;
+
+        &:first-child {
+            margin-top: -10px;
+        }
+
+        &__content {
+            max-width: 358px;
+        }
+
+        &__desc {
+            margin-top: 8px;
+        }
+    }
+
+    &__img {
+        width: 570px;
+        height: 574px;
+        object-fit: cover;
+    }
+}
+
+.sub {
+    margin-top: 150px;
+}

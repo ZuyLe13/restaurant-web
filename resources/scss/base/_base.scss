@@ -1,0 +1,35 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Plus Jakarta Sans", sans-serif, "Libre Bodoni", serif,
+        "Playball";
+    background: var(--Dark);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+:root {
+    --Dark: #111114;
+    --White-80: rgba(255, 255, 255, 0.8);
+    --primary-color: #fb8f2c;
+}

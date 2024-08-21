@@ -1,0 +1,66 @@
+@use "../base";
+
+.header--sticky {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--Dark);
+}
+
+.header-top {
+    @extend %flexCenter;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px 0;
+
+    .nav__list {
+        @extend %flexCenter;
+
+        .nav__link {
+            @extend .section-desc;
+            padding: 8px 0;
+            margin-right: 26px;
+            color: var(--White-80);
+            transition: color 0.3s;
+        }
+
+        .nav__link:hover {
+            color: var(--primary-color);
+        }
+    }
+
+    .nav__logo {
+        margin: 0 227px 0 200px;
+    }
+
+    .nav-booking {
+        @extend .section-desc;
+        position: relative;
+
+        .nav-booking__link {
+            margin-left: 34px;
+            padding: 4px;
+            color: var(--White-80);
+            transition: 0.3s;
+        }
+
+        .nav-booking__link:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-booking__link::after {
+            position: absolute;
+            content: "";
+            width: 133px;
+            height: 2px;
+            background: var(--White-80);
+            bottom: 0;
+            right: 4px;
+            transition: all 0.3s;
+        }
+
+        .nav-booking__link:hover::after {
+            background: var(--primary-color);
+        }
+    }
+}
